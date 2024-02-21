@@ -1,22 +1,43 @@
-import logo from './logo.svg';
+import {Message} from './components/Messages'
+import { ClickHandler } from './components/ClickHandler';
 import './App.css';
+import './styles.css';
+import { ParentComponent } from './components/ParentComponent';
+import { UserGreeting } from './components/UserGreeting';
+import { NameList } from './components/NameList';
+import Form from './components/Form';
+import { PostList } from './components/PostList';
+import PostForm from './components/PostForm';
+import Counter from './components/Counter';
+import HookMouse from './components/HookMouse';
+import { useState } from 'react';
+import IntervalCounter from './components/IntervalCounter';
+import FetchData from './components/FetchData';
+import FetchDataReducer from './components/FetchDataReducer';
+import DocTitleOne from './components/DocTitleOne';
+import CounterOne from './components/CounterOne';
 
 function App() {
+  // const [display, setDisplay] = useState(true)
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* <Message /> */}
+        {/* <ClickHandler /> */}
+        {/* <ParentComponent /> */}
+        {/* <UserGreeting /> */}
+        {/* <NameList /> */}
+        {/* <Form /> */}
+        {/* <PostList /> */}
+        {/* <PostForm /> */}
+        {/* <Counter /> */}
+        {/* <button onClick={() => setDisplay(!display)}>Toggle Component</button>
+        {display && <HookMouse />} */}
+        <IntervalCounter />
+        {/* <FetchData /> */}
+        <FetchDataReducer />
+        {/* <DocTitleOne /> */}
+        <CounterOne />
       </header>
     </div>
   );
